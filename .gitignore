@@ -85,7 +85,10 @@ Thumbs.db
 # -----------------------------------------------------------------------------
 # Models (Large files - use git-lfs if needed)
 # -----------------------------------------------------------------------------
-models/
+# Note: models/ directory contains model configs, but ignore actual model files
+models/llm/
+models/vision/
+models/audio/
 *.gguf
 *.bin
 *.pkl
@@ -97,12 +100,16 @@ models/
 # -----------------------------------------------------------------------------
 # Storage
 # -----------------------------------------------------------------------------
-storage/
+# Note: storage/ directory contains user uploads, ignore it
+storage/uploads/
+storage/outputs/
+storage/cache/
 
 # -----------------------------------------------------------------------------
 # Docker
 # -----------------------------------------------------------------------------
-docker/
+# Note: docker/ directory contains important config files (Dockerfile, docker-compose.yml)
+# Only ignore .docker/ directory
 .docker/
 
 # -----------------------------------------------------------------------------

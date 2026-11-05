@@ -33,7 +33,7 @@
 ## 📁 **هيكل المشروع**
 
 ```
-ai_production_agent/
+NeuronAI/
 ├── api/                          # FastAPI Application
 │   ├── __init__.py
 │   ├── main.py                   # Main application
@@ -134,7 +134,7 @@ ai_production_agent/
 
 ```bash
 # 1. انسخ المستودع
-cd /workspace/ai_production_agent
+cd /workspace/NeuronAI
 
 # 2. انسخ ملف البيئة
 cp docker/.env.example docker/.env
@@ -158,7 +158,7 @@ docker-compose logs -f
 
 ```bash
 # 1. انسخ المستودع
-cd /workspace/ai_production_agent
+cd /workspace/NeuronAI
 
 # 2. أنشئ بيئة افتراضية
 python -m venv .venv
@@ -466,8 +466,8 @@ DATABASE_URL=sqlite+aiosqlite:///./ai_agent.db
 ```bash
 # 1. انسخ المستودع
 cd /opt
-sudo git clone https://github.com/your-username/ai_production_agent.git
-cd ai_production_agent
+sudo git clone https://github.com/your-username/NeuronAI.git
+cd NeuronAI
 
 # 2. انسخ ملف البيئة
 sudo cp docker/.env.example docker/.env
